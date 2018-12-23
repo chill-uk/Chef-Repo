@@ -29,3 +29,11 @@ template '/var/www/html/index.html' do
   owner 'web_admin'
   group 'web_admin'
 end
+
+file '/root/test' do
+  content '3'
+  owner 'root'
+  group 'root'
+  mode '0755'
+  action :create
+end
